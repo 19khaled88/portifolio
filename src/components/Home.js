@@ -1,12 +1,9 @@
 import React from 'react'
 import '../design/home.css'
-import user from '../assets/khaled picure.jpeg'
+import user from '../assets/khaled_picture.jpeg'
 const Home = () => {
   return (
-    <div
-      className="flex flex-row container mx-auto"
-      style={{ height: '537px' }}
-    >
+    <div className="flex flex-row  mx-auto home-bg" style={{ height: '561px' }}>
       <div className="flex flex-col flex-1 text-left pt-24 pl-16 mx-auto">
         <h4 className="text-white text-5xl font-bold">Web Developer</h4>
         <h2 className="text-white text-4xl">Front-End and Back-End</h2>

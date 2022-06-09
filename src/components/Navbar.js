@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 const Navbar = () => {
   return (
     <div
-      className="navbar container mx-auto rounded-md px-6"
+      className="navbar  mx-auto  px-6"
       style={{ backgroundColor: '#FEBAAD' }}
     >
       <div className="flex-1">
@@ -20,10 +20,10 @@ const Navbar = () => {
             <Link to="/resume">Resume</Link>
           </li>
           <li className="cursor-pointer px-5 py-2 rounded-full border">
-            <a>about me</a>
+            <Link to="/about">about me</Link>
           </li>
           <li className="cursor-pointer px-5 py-2 rounded-full border">
-            <a>Contact</a>
+            <Link to="/contact">Contact</Link>
           </li>
         </ul>
       </div>
