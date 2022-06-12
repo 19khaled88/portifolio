@@ -38,6 +38,13 @@ const Navbar = () => {
             about me
           </Link>
           <Link
+            to="/blog"
+            href="#responsive-header"
+            class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4 font-bold  text-green-600"
+          >
+            Blog
+          </Link>
+          <Link
             to="/contact"
             href="#responsive-header"
             class="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white font-bold  text-green-600"
