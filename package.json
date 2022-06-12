@@ -10,6 +10,7 @@
     "@testing-library/user-event": "^13.5.0",
     "aos": "^2.3.4",
     "daisyui": "^2.15.2",
+    "hamburger-react": "^2.5.0",
     "jotform-react": "^1.0.4",
     "pdf-viewer-reactjs": "^2.2.3",
     "pdfjs-dist": "^2.14.305",
