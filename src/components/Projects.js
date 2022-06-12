@@ -1,9 +1,14 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
 import { SocialMediaIconsReact } from 'social-media-icons-react'
-import warehouse from '../assets/bookwarehouse.png'
 import bicyclesiteimage from '../assets/bicyclesiteimage.png'
+import warehouse from '../assets/bookwarehouse.png'
 import imgnotfound from '../assets/data-not-found-icon.jpg'
 const Projects = () => {
+  const navigate = useNavigate()
+  const detailHandler = (str) => {
+    navigate('/details', { state: { data: str } })
+  }
   return (
     <div style={{ backgroundColor: '#EAEDF0' }} className="pb-16 pt-16">
       <p className="text-green-600 text-center font-bold">Projects</p>
@@ -13,8 +18,8 @@ const Projects = () => {
       >
         My Projects List
       </h4>
-      <div className="grid grid-cols-3 gap-x-6 gap-y-7 place-items-center container px-2 mx-auto pt-16">
-        <div class="card w-72 bg-base-100 shadow-xl">
+      <div className="grid lg:grid-cols-3 md:grid-cols-1 grid-cols-1 gap-x-3 gap-y-7 place-items-center container px-2 mx-auto pt-16">
+        <div class="card w-80 bg-base-100 shadow-xl">
           <figure>
             <img
               className="w-full"
@@ -24,8 +29,13 @@ const Projects = () => {
             />
           </figure>
           <div className="pl-2 card-body pr-2">
-            <h2 style={{ fontSize: '20px' }}>Bicycle tools manufacturer</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title" style={{ fontSize: '20px' }}>
+              Bicycle tools manufacturer
+            </h2>
+            <p>
+              This project is built with react js and node js. Mongodb is
+              working as database
+            </p>
             <div class="card-actions justify-between flex flex-row">
               <div className="flex flex-row gap-x-2">
                 <SocialMediaIconsReact
@@ -54,13 +64,17 @@ const Projects = () => {
                 />
               </div>
               <div>
-                <button class="btn btn-sm">Details</button>
+                <button
+                  onClick={() => detailHandler('bicycle')}
+                  class="btn btn-sm"
+                >
+                  Details
+                </button>
               </div>
             </div>
           </div>
         </div>
-
-        <div class="card w-72 bg-base-100 shadow-xl">
+        <div class="card w-80 bg-base-100 shadow-xl">
           <figure>
             <img
               className="w-full"
@@ -70,8 +84,13 @@ const Projects = () => {
             />
           </figure>
           <div className="pl-2 card-body pr-2">
-            <h2 style={{ fontSize: '20px' }}>Book warehouse</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <h2 className="card-title" style={{ fontSize: '20px' }}>
+              Book warehouse
+            </h2>
+            <p>
+              In this project react js is primary library with node and mongodb
+              storage
+            </p>
             <div class="card-actions justify-between flex flex-row">
               <div className="flex flex-row gap-x-2">
                 <SocialMediaIconsReact
@@ -100,12 +119,17 @@ const Projects = () => {
                 />
               </div>
               <div>
-                <button class="btn btn-sm">Demo</button>
+                <button
+                  onClick={() => detailHandler('book')}
+                  class="btn btn-sm"
+                >
+                  Details
+                </button>
               </div>
             </div>
           </div>
         </div>
-        <div class="card w-72 bg-base-100 shadow-xl">
+        <div class="card w-80 bg-base-100 shadow-xl">
           <figure>
             <img
               className="w-full"
@@ -145,7 +169,12 @@ const Projects = () => {
                 />
               </div>
               <div>
-                <button class="btn btn-sm">Demo</button>
+                <button
+                  // onClick={() => detailHandler('e-site')}
+                  class="btn btn-sm"
+                >
+                  Details
+                </button>
               </div>
             </div>
           </div>

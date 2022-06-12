@@ -1,17 +1,18 @@
+import { Link } from 'react-router-dom'
+import { SocialMediaIconsReact } from 'social-media-icons-react'
 import user from '../assets/khaled_picture.jpg'
 import '../design/home.css'
 import Particle from './Particles'
-import { Link } from 'react-router-dom'
-import { SocialMediaIconsReact } from 'social-media-icons-react'
 const Home = () => {
   return (
-    <>
+    <div>
+      <Particle />
       <div
-        className="flex flex-row  mx-auto home-bg"
+        className="flex flex-col lg:flex-row md:flex-row mx-auto home-bg"
         style={{ height: '571px' }}
       >
         <div
-          className="flex flex-col flex-1 text-left pt-24 pl-16 mx-auto"
+          className="flex flex-col flex-1 text-left md:pt-24  lg:pt-24 pl-16 mx-auto"
           data-aos="fade-up"
         >
           <h4 className="text-white text-5xl font-bold">Web Developer</h4>
@@ -60,13 +61,15 @@ const Home = () => {
           </div>
         </div>
         <div className="relative flex-1 flex flex-col justify-center items-center">
-          <img className="w-64 absolute inset-y-20" src={user} alt="" />
-          <div className="border-1 rounded-full w-80 h-80 bg-red-400"></div>
+          <img
+            className="lg:w-64 w-44 absolute md:inset-y-36 lg:inset-y-20 inset-y-5"
+            src={user}
+            alt=""
+          />
+          <div className="border-1 rounded-full w-60 h-60 lg:w-80 lg:h-80 bg-red-400"></div>
         </div>
-
-        <Particle />
       </div>
-    </>
+    </div>
   )
 }
 

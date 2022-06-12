@@ -31,14 +31,11 @@ const Skillset = () => {
       >
         Skill Sets
       </h4>
-      <h4
-        className="text-red-600 text-3xl font-bold text-center"
-        id="typewriters"
-      ></h4>
-      <TypeEffect  />
-      <div className="grid grid-cols-3 gap-x-9 gap-y-9 pt-16 lg:max-x-lg  mx-auto">
+
+      <TypeEffect />
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 px-2 gap-x-5 gap-y-9 pt-16 mx-auto">
         <div
-          class="card w-96 bg-base-100 shadow-xl"
+          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
           <div class="avatar mx-auto">
@@ -57,7 +54,7 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card w-96 bg-base-100 shadow-xl"
+          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl "
           style={{ backgroundColor: '#f5f4fb' }}
         >
           <div class="avatar mx-auto pt-2">
@@ -76,7 +73,7 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card w-96 bg-base-100 shadow-xl"
+          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
           <div class="avatar mx-auto pt-2">
@@ -95,7 +92,7 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card w-96 bg-base-100 shadow-xl"
+          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
           <div class="avatar mx-auto pt-2">
@@ -114,7 +111,7 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card w-96 bg-base-100 shadow-xl"
+          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
           <div class="avatar mx-auto pt-2">
@@ -134,7 +131,7 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card w-96 bg-base-100 shadow-xl"
+          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
           <div class="avatar mx-auto pt-2">
