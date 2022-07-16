@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom'
 import { SocialMediaIconsReact } from 'social-media-icons-react'
 import bicyclesiteimage from '../assets/bicyclesiteimage.png'
 import warehouse from '../assets/bookwarehouse.png'
-import imgnotfound from '../assets/data-not-found-icon.jpg'
+import imgnotfound from '../assets/homepage.png'
 const Projects = () => {
   const navigate = useNavigate()
   const detailHandler = (str) => {
@@ -25,7 +25,7 @@ const Projects = () => {
               className="w-full"
               style={{ height: '200px' }}
               src={bicyclesiteimage}
-              alt="Shoes"
+              alt={bicyclesiteimage}
             />
           </figure>
           <div className="pl-2 card-body pr-2">
@@ -51,7 +51,8 @@ const Projects = () => {
                   icon="web"
                   iconColor="rgba(255,255,255,1)"
                   backgroundColor="rgba(26,166,233,1)"
-                  url="https://bicycletoolsmanufacturer.web.app/"
+                  url="https://gilded-pony-dcfe3e.netlify.app/"
+                  // url="https://bicycletoolsmanufacturer.web.app/"
                   size="32"
                 />
                 <SocialMediaIconsReact
@@ -80,7 +81,7 @@ const Projects = () => {
               className="w-full"
               style={{ height: '200px' }}
               src={warehouse}
-              alt="Shoes"
+              alt={warehouse}
             />
           </figure>
           <div className="pl-2 card-body pr-2">
@@ -148,7 +149,7 @@ const Projects = () => {
                   icon="github"
                   iconColor="rgba(255,255,255,1)"
                   backgroundColor="#cbc9cc"
-                  url="https://some-website.com/my-social-media-url"
+                  url="https://github.com/19khaled88/ecommercewithnext"
                   size="32"
                 />
                 <SocialMediaIconsReact
@@ -156,7 +157,7 @@ const Projects = () => {
                   icon="web"
                   iconColor="rgba(255,255,255,1)"
                   backgroundColor="rgba(26,166,233,1)"
-                  url="https://some-website.com/my-social-media-url"
+                  url="https://ecommercewithnext.vercel.app/"
                   size="32"
                 />
                 <SocialMediaIconsReact
@@ -164,13 +165,13 @@ const Projects = () => {
                   icon="github"
                   iconColor="rgba(255,255,255,1)"
                   backgroundColor="#A38E57"
-                  url="https://some-website.com/my-social-media-url"
+                  url="https://github.com/19khaled88/ecommercewithnext"
                   size="32"
                 />
               </div>
               <div>
                 <button
-                  // onClick={() => detailHandler('e-site')}
+                  onClick={() => detailHandler('e-site')}
                   class="btn btn-sm"
                 >
                   Details

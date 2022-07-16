@@ -8,6 +8,10 @@ import screenshot5 from '../assets/screenshot-10.png'
 import screenshot6 from '../assets/screenshot-11.png'
 import screenshot7 from '../assets/screenshot-12.png'
 import screenshot8 from '../assets/screenshot-13.png'
+import screenshot9 from '../assets/homepage.png'
+import screenshot10 from '../assets/dashboard.png'
+import screenshot11 from '../assets/cart page.png'
+import screenshot12 from '../assets/userspage.png'
 import '../design/details.css'
 const Details = () => {
   const { state } = useLocation()
@@ -17,6 +21,8 @@ const Details = () => {
       return <img src={screenshot1} />
     } else if (data === 'book') {
       return <img src={screenshot5} />
+    } else if (data === 'e-site') {
+      return <img src={screenshot9} />
     }
   }
   const itemName = () => {
@@ -43,6 +49,53 @@ const Details = () => {
           <img className="w-96" src={screenshot8} />
         </>
       )
+    } else if (data === 'e-site') {
+      return (
+        <>
+          <img className="w-96" src={screenshot10} />
+          <img className="w-96" src={screenshot11} />
+          <img className="w-96" src={screenshot12} />
+        </>
+      )
+    }
+  }
+  const techenologies = () => {
+    if (data === 'bicycle') {
+      return (
+        <>
+          <p className="bg-rose-400 px-2 text-center">HTML</p>
+          <p className="bg-rose-400 px-2 text-center">Tailwind css</p>
+          <p className="bg-rose-400 px-2 text-center">React JS</p>
+          <p className="bg-rose-400 px-2 text-center">Node JS</p>
+          <p className="bg-rose-400 px-2 text-center">React hooks</p>
+          <p className="bg-rose-400 px-2 text-center">Firebase</p>
+          <p className="bg-rose-400 px-2 text-center">Monogodb</p>
+        </>
+      )
+    } else if (data === 'book') {
+      return (
+        <>
+          <p className="bg-rose-400 px-2 text-center">HTML</p>
+          <p className="bg-rose-400 px-2 text-center">Tailwind css</p>
+          <p className="bg-rose-400 px-2 text-center">React JS</p>
+          <p className="bg-rose-400 px-2 text-center">Node JS</p>
+          <p className="bg-rose-400 px-2 text-center">React hooks</p>
+          <p className="bg-rose-400 px-2 text-center">Firebase</p>
+          <p className="bg-rose-400 px-2 text-center">Monogodb</p>
+        </>
+      )
+    } else if (data === 'e-site') {
+      return (
+        <>
+          <p className="bg-rose-400 px-2 text-center">HTML</p>
+          <p className="bg-rose-400 px-2 text-center">Tailwind css</p>
+          <p className="bg-rose-400 px-2 text-center">Next JS</p>
+          <p className="bg-rose-400 px-2 text-center">Redux</p>
+          <p className="bg-rose-400 px-2 text-center">React hooks</p>
+          <p className="bg-rose-400 px-2 text-center">Firebase</p>
+          <p className="bg-rose-400 px-2 text-center">Monogodb</p>
+        </>
+      )
     }
   }
 
@@ -64,13 +117,7 @@ const Details = () => {
               <div className="pt-4">
                 <p className="pb-2">Technologies used</p>
                 <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-4">
-                  <p className="bg-rose-400 px-2 text-center">HTML</p>
-                  <p className="bg-rose-400 px-2 text-center">Tailwind css</p>
-                  <p className="bg-rose-400 px-2 text-center">React JS</p>
-                  <p className="bg-rose-400 px-2 text-center">Node JS</p>
-                  <p className="bg-rose-400 px-2 text-center">React hooks</p>
-                  <p className="bg-rose-400 px-2 text-center">Firebase</p>
-                  <p className="bg-rose-400 px-2 text-center">Monogodb</p>
+                  {techenologies()}
                 </div>
               </div>
             </div>
