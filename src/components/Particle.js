@@ -1,12 +1,10 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import { SocialMediaIconsReact } from 'social-media-icons-react'
-import Particles from 'react-tsparticles'
 import { useAnimationFrame } from 'framer-motion'
-import user from '../assets/khaled_picture.jpg'
-import reactLoo from '../assets/react-js-logo.png'
-import { useRef } from 'react'
+import React, { useRef } from 'react'
+import { Link } from 'react-router-dom'
+import Particles from 'react-tsparticles'
+import { SocialMediaIconsReact } from 'social-media-icons-react'
 import { loadFull } from 'tsparticles'
+import user from '../assets/khaled_picture.jpg'
 const Particle = () => {
   const imageRef = useRef(null)
   useAnimationFrame((t) => {
@@ -222,11 +220,11 @@ const Particle = () => {
           },
         }}
       />
-      <div className="absolute top-0 z-30 text-white flex flex-row justify-between w-full px-10 lg:pt-20">
+      <div className="absolute top-0 z-30 text-white flex flex-row justify-between w-full px-10 lg:pt-32 pt-16">
         <div className="flex-1">
           {' '}
-          <h4 className="text-white text-5xl font-bold">Web Developer</h4>
-          <h2 className="text-white text-4xl">Front-End and Back-End</h2>
+          <h4 className="text-white text-5xl font-bold text-rose-500">Web Developer</h4>
+          <h2 className="text-white text-4xl">Full Stack Developer</h2>
           <h2 className="text-white text-4xl">React js and Node js</h2>
           <p className="text-white text-sm pb-6">
             I'm promised to do something exceptional!{' '}
@@ -237,8 +235,8 @@ const Particle = () => {
             </Link>
 
             <SocialMediaIconsReact
-              icon="twitter"
-              url="https://some-website.com/my-social-media-url"
+              icon="github"
+              url="https://github.com/19khaled88"
               backgroundColor="rgba(26,166,233,1)"
               iconColor="rgba(255,255,255,1)"
               borderColor="rgba(0,0,0,0.25)"
@@ -260,19 +258,13 @@ const Particle = () => {
               borderColor="rgba(0,0,0,0.25)"
             />
 
-            <SocialMediaIconsReact
-              icon="whatsapp"
-              url="https://some-website.com/my-social-media-url"
-              backgroundColor="rgba(26,166,233,1)"
-              iconColor="rgba(255,255,255,1)"
-              borderColor="rgba(0,0,0,0.25)"
-            />
+           
           </div>
         </div>
         <div className="relative flex-1 lg:flex hidden  justify-center items-center lg:pt-16">
           <img
             ref={imageRef}
-            className="lg:w-72 lg:h-72 h-64 w-64 absolute md:inset-y-36 lg:inset-y-20 inset-y-5 rounded-full"
+            className="lg:w-72 lg:h-72 h-64 w-64 absolute rounded-full"
             src={user}
             alt=""
           />

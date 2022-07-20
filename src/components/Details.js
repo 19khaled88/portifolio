@@ -1,16 +1,21 @@
 import React from 'react'
-import { Link, useLocation } from 'react-router-dom'
+import { useLocation } from 'react-router-dom'
+import screenshot11 from '../assets/cart page.png'
+import screenshot10 from '../assets/dashboard.png'
+import graphqlImage from '../assets/graphql-todo-list.png'
+import screenshot9 from '../assets/homepage.png'
+import reduxadd from '../assets/reduxaddmodal.png'
+import reduxedit from '../assets/reduxeditmodal.png'
+import reduxtask from '../assets/reduxtaskstatus.png'
 import screenshot1 from '../assets/screenshot-1.png'
-import screenshot2 from '../assets/screenshot-2.png'
-import screenshot3 from '../assets/screenshot-3.png'
-import screenshot4 from '../assets/screenshot-4.png'
 import screenshot5 from '../assets/screenshot-10.png'
 import screenshot6 from '../assets/screenshot-11.png'
 import screenshot7 from '../assets/screenshot-12.png'
 import screenshot8 from '../assets/screenshot-13.png'
-import screenshot9 from '../assets/homepage.png'
-import screenshot10 from '../assets/dashboard.png'
-import screenshot11 from '../assets/cart page.png'
+import screenshot2 from '../assets/screenshot-2.png'
+import screenshot3 from '../assets/screenshot-3.png'
+import screenshot4 from '../assets/screenshot-4.png'
+import reduxImage from '../assets/todo.png'
 import screenshot12 from '../assets/userspage.png'
 import '../design/details.css'
 const Details = () => {
@@ -18,11 +23,15 @@ const Details = () => {
   const { data } = state
   const image = () => {
     if (data === 'bicycle') {
-      return <img src={screenshot1} />
+      return <img src={screenshot1} alt={screenshot1} />
     } else if (data === 'book') {
-      return <img src={screenshot5} />
+      return <img src={screenshot5} alt={screenshot5}/>
     } else if (data === 'e-site') {
-      return <img src={screenshot9} />
+      return <img src={screenshot9} alt={screenshot9}/>
+    }else if(data === 'redux'){
+      return <img src={reduxImage} alt={reduxImage}/>
+    }else if(data === 'graphql'){
+      return <img src={graphqlImage} alt={graphqlImage}/>
     }
   }
   const itemName = () => {
@@ -36,25 +45,39 @@ const Details = () => {
     if (data === 'bicycle') {
       return (
         <>
-          <img className="w-96" src={screenshot2} />
-          <img className="w-96" src={screenshot3} />
-          <img className="w-96" src={screenshot4} />
+          <img className="w-96" src={screenshot2} alt={screenshot2}/>
+          <img className="w-96" src={screenshot3} alt={screenshot3}/>
+          <img className="w-96" src={screenshot4} alt={screenshot4}/>
         </>
       )
     } else if (data === 'book') {
       return (
         <>
-          <img className="w-96" src={screenshot6} />
-          <img className="w-96" src={screenshot7} />
-          <img className="w-96" src={screenshot8} />
+          <img className="w-96" src={screenshot6} alt={screenshot6} />
+          <img className="w-96" src={screenshot7} alt={screenshot7}/>
+          <img className="w-96" src={screenshot8} alt={screenshot8}/>
         </>
       )
     } else if (data === 'e-site') {
       return (
         <>
-          <img className="w-96" src={screenshot10} />
-          <img className="w-96" src={screenshot11} />
-          <img className="w-96" src={screenshot12} />
+          <img className="w-96" src={screenshot10} alt={screenshot10}/>
+          <img className="w-96" src={screenshot11} alt={screenshot11}/>
+          <img className="w-96" src={screenshot12} alt={screenshot12}/>
+        </>
+      )
+    }else if(data === 'redux'){
+      return (
+        <>
+          <img className="w-96" src={reduxtask} alt={reduxtask}/>
+          <img className="w-96" src={reduxedit} alt={reduxedit}/>
+          <img className="w-96" src={reduxadd} alt={reduxadd}/>
+        </>
+      )
+    }else if(data ==='graphql'){
+      return (
+        <>
+         
         </>
       )
     }

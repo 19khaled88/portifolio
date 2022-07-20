@@ -1,9 +1,11 @@
 import React from 'react'
-import { Link, useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { SocialMediaIconsReact } from 'social-media-icons-react'
-import bicyclesiteimage from '../assets/bicyclesiteimage.png'
+import bicyclesiteimage from '../assets/banner-1.jpg'
 import warehouse from '../assets/bookwarehouse.png'
+import graphqlImage from '../assets/graphql-todo-list.png'
 import imgnotfound from '../assets/homepage.png'
+import reduxImage from '../assets/todo.png'
 const Projects = () => {
   const navigate = useNavigate()
   const detailHandler = (str) => {
@@ -141,7 +143,7 @@ const Projects = () => {
           </figure>
           <div class="card-body">
             <h2 class="card-title">Buy-sell portal,- Next js</h2>
-            <p>If a dog chews shoes whose shoes does he choose?</p>
+            <p>This project helped me much to explore next js framework</p>
             <div class="card-actions justify-between flex flex-row">
               <div className="flex flex-row gap-x-2">
                 <SocialMediaIconsReact
@@ -180,6 +182,102 @@ const Projects = () => {
             </div>
           </div>
         </div>
+
+        <div class="card w-80 bg-base-100 shadow-xl">
+        <figure>
+          <img
+            className="w-full"
+            style={{ height: '200px' }}
+            src={reduxImage}
+            alt="Shoes"
+          />
+        </figure>
+        <div class="card-body">
+          <h2 class="card-title">Todo List,- Redux Toolkit</h2>
+          <p>I invested some of my times to learn Most crazy tool, Redux toolkit</p>
+          <div class="card-actions justify-between flex flex-row">
+            <div className="flex flex-row gap-x-2">
+              <SocialMediaIconsReact
+                borderColor="rgba(0,0,0,0.25)"
+                icon="github"
+                iconColor="rgba(255,255,255,1)"
+                backgroundColor="#cbc9cc"
+                url="https://github.com/19khaled88/reactreduxtodo"
+                size="32"
+              />
+              <SocialMediaIconsReact
+                borderColor="rgba(0,0,0,0.25)"
+                icon="web"
+                iconColor="rgba(255,255,255,1)"
+                backgroundColor="rgba(26,166,233,1)"
+                url="https://reactreduxtodo.vercel.app/"
+                size="32"
+              />
+           
+            </div>
+            <div>
+              <button
+                onClick={() => detailHandler('redux')}
+                class="btn btn-sm"
+              >
+                Details
+              </button>
+            </div>
+          </div>
+        </div>
+        </div>
+
+        <div class="card w-80 bg-base-100 shadow-xl">
+      <figure>
+        <img
+          className="w-full"
+          style={{ height: '200px' }}
+          src={graphqlImage}
+          alt="Shoes"
+        />
+      </figure>
+      <div class="card-body">
+        <h2 class="card-title">Todo list - Graphql</h2>
+        <p>Graphql is the primary focus in this Todo list project</p>
+        <div class="card-actions justify-between flex flex-row">
+          <div className="flex flex-row gap-x-2">
+            <SocialMediaIconsReact
+              borderColor="rgba(0,0,0,0.25)"
+              icon="github"
+              iconColor="rgba(255,255,255,1)"
+              backgroundColor="#cbc9cc"
+              url="https://github.com/19khaled88/graphql-client"
+              size="32"
+            />
+            <SocialMediaIconsReact
+              borderColor="rgba(0,0,0,0.25)"
+              icon="web"
+              iconColor="rgba(255,255,255,1)"
+              backgroundColor="rgba(26,166,233,1)"
+              url="https://calm-vacherin-2317b2.netlify.app/"
+              size="32"
+            />
+            <SocialMediaIconsReact
+              borderColor="rgba(0,0,0,0.25)"
+              icon="github"
+              iconColor="rgba(255,255,255,1)"
+              backgroundColor="#A38E57"
+              url="#"
+              size="32"
+            />
+          </div>
+          <div>
+            <button
+              onClick={() => detailHandler('graphql')}
+              class="btn btn-sm"
+            >
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+        </div>
+
       </div>
     </div>
   )
