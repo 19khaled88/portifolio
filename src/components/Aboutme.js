@@ -1,8 +1,10 @@
 import React from 'react'
 import khaled from '../assets/khaled_picture.jpg'
+import Particle from './Particle'
 const Aboutme = () => {
   return (
     <div className="flex flex-col">
+     
       <p className="text-green-600 text-center font-bold pt-4">About me</p>
       <p
         className="text-center text-3xl font-bold"
