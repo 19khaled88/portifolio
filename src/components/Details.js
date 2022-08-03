@@ -25,13 +25,13 @@ const Details = () => {
     if (data === 'bicycle') {
       return <img src={screenshot1} alt={screenshot1} />
     } else if (data === 'book') {
-      return <img src={screenshot5} alt={screenshot5}/>
+      return <img src={screenshot5} alt={screenshot5} />
     } else if (data === 'e-site') {
-      return <img src={screenshot9} alt={screenshot9}/>
-    }else if(data === 'redux'){
-      return <img src={reduxImage} alt={reduxImage}/>
-    }else if(data === 'graphql'){
-      return <img src={graphqlImage} alt={graphqlImage}/>
+      return <img src={screenshot9} alt={screenshot9} />
+    } else if (data === 'redux') {
+      return <img src={reduxImage} alt={reduxImage} />
+    } else if (data === 'graphql') {
+      return <img src={graphqlImage} alt={graphqlImage} />
     }
   }
   const itemName = () => {
@@ -45,41 +45,37 @@ const Details = () => {
     if (data === 'bicycle') {
       return (
         <>
-          <img className="w-96" src={screenshot2} alt={screenshot2}/>
-          <img className="w-96" src={screenshot3} alt={screenshot3}/>
-          <img className="w-96" src={screenshot4} alt={screenshot4}/>
+          <img className="w-96" src={screenshot2} alt={screenshot2} />
+          <img className="w-96" src={screenshot3} alt={screenshot3} />
+          <img className="w-96" src={screenshot4} alt={screenshot4} />
         </>
       )
     } else if (data === 'book') {
       return (
         <>
           <img className="w-96" src={screenshot6} alt={screenshot6} />
-          <img className="w-96" src={screenshot7} alt={screenshot7}/>
-          <img className="w-96" src={screenshot8} alt={screenshot8}/>
+          <img className="w-96" src={screenshot7} alt={screenshot7} />
+          <img className="w-96" src={screenshot8} alt={screenshot8} />
         </>
       )
     } else if (data === 'e-site') {
       return (
         <>
-          <img className="w-96" src={screenshot10} alt={screenshot10}/>
-          <img className="w-96" src={screenshot11} alt={screenshot11}/>
-          <img className="w-96" src={screenshot12} alt={screenshot12}/>
+          <img className="w-96" src={screenshot10} alt={screenshot10} />
+          <img className="w-96" src={screenshot11} alt={screenshot11} />
+          <img className="w-96" src={screenshot12} alt={screenshot12} />
         </>
       )
-    }else if(data === 'redux'){
+    } else if (data === 'redux') {
       return (
         <>
-          <img className="w-96" src={reduxtask} alt={reduxtask}/>
-          <img className="w-96" src={reduxedit} alt={reduxedit}/>
-          <img className="w-96" src={reduxadd} alt={reduxadd}/>
+          <img className="w-96" src={reduxtask} alt={reduxtask} />
+          <img className="w-96" src={reduxedit} alt={reduxedit} />
+          <img className="w-96" src={reduxadd} alt={reduxadd} />
         </>
       )
-    }else if(data ==='graphql'){
-      return (
-        <>
-         
-        </>
-      )
+    } else if (data === 'graphql') {
+      return <></>
     }
   }
   const techenologies = () => {
@@ -115,7 +111,27 @@ const Details = () => {
           <p className="bg-rose-400 px-2 text-center">Next JS</p>
           <p className="bg-rose-400 px-2 text-center">Redux</p>
           <p className="bg-rose-400 px-2 text-center">React hooks</p>
-          <p className="bg-rose-400 px-2 text-center">Firebase</p>
+
+          <p className="bg-rose-400 px-2 text-center">Monogodb</p>
+        </>
+      )
+    } else if (data === 'redux') {
+      return (
+        <>
+          <p className="bg-rose-400 px-2 text-center">HTML</p>
+          <p className="bg-rose-400 px-2 text-center">Tailwind css</p>
+          <p className="bg-rose-400 px-2 text-center">Redux Toolkit</p>
+          <p className="bg-rose-400 px-2 text-center">React hooks</p>
+          <p className="bg-rose-400 px-2 text-center">Monogodb</p>
+        </>
+      )
+    } else if (data === 'graphql') {
+      return (
+        <>
+          <p className="bg-rose-400 px-2 text-center">HTML</p>
+          <p className="bg-rose-400 px-2 text-center">Tailwind css</p>
+          <p className="bg-rose-400 px-2 text-center">Graphql</p>
+          <p className="bg-rose-400 px-2 text-center">React hooks</p>
           <p className="bg-rose-400 px-2 text-center">Monogodb</p>
         </>
       )

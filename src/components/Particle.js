@@ -13,12 +13,9 @@ const Particle = () => {
     imageRef.current.style.transform = `translateY(${y}px) rotateX(${rotate}deg) rotateY(${rotate}deg)`
   })
   const particlesInit = (main) => {
-    console.log(main)
     loadFull(main)
   }
-  const particlesLoaded = (container) => {
-    console.log(container)
-  }
+  const particlesLoaded = (container) => {}
   return (
     <div className="relative">
       <Particles
@@ -223,7 +220,9 @@ const Particle = () => {
       <div className="absolute top-0 z-30 text-white flex flex-row justify-between w-full px-10 lg:pt-32 pt-16">
         <div className="flex-1">
           {' '}
-          <h4 className="text-white text-5xl font-bold text-rose-500">Web Developer</h4>
+          <h4 className="text-white text-5xl font-bold text-rose-500">
+            Web Developer
+          </h4>
           <h2 className="text-white text-4xl">Full Stack Developer</h2>
           <h2 className="text-white text-4xl">React js and Node js</h2>
           <p className="text-white text-sm pb-6">
@@ -231,7 +230,7 @@ const Particle = () => {
           </p>
           <div className="flex flex-row items-center gap-x-4">
             <Link to="/resume">
-              <button class="btn btn-success w-32">resume</button>
+              <button className="btn btn-success w-32">resume</button>
             </Link>
 
             <SocialMediaIconsReact
@@ -257,8 +256,6 @@ const Particle = () => {
               iconColor="rgba(255,255,255,1)"
               borderColor="rgba(0,0,0,0.25)"
             />
-
-           
           </div>
         </div>
         <div className="relative flex-1 lg:flex hidden  justify-center items-center lg:pt-16">

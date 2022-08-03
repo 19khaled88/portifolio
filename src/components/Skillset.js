@@ -5,6 +5,8 @@ import next from '../assets/next_js.png'
 import node from '../assets/node-js.png'
 import react from '../assets/react-icon.png'
 import native from '../assets/React-native1.png'
+import redux from '../assets/redux.png'
+import graphql from '../assets/graphql.png'
 import TypeEffect from './TypeEffect'
 // import Typescripts from './Typescript';
 const Skillset = () => {
@@ -35,16 +37,16 @@ const Skillset = () => {
       <TypeEffect />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-8 px-2 gap-x-5 gap-y-9 pt-16 mx-auto">
         <div
-          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
-          <div class="avatar mx-auto">
-            <div class="w-24 mask mask-squircle">
+          <div className="avatar mx-auto">
+            <div className="w-24 mask mask-squircle">
               <img src={react} />
             </div>
           </div>
-          <div class="card-body">
-            <h2 class="card-title  mx-auto " style={{ color: '#263b68' }}>
+          <div className="card-body">
+            <h2 className="card-title  mx-auto " style={{ color: '#263b68' }}>
               React JS
             </h2>
             <p className="text-justify" style={{ color: '#8e7ca2' }}>
@@ -54,16 +56,16 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl "
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl "
           style={{ backgroundColor: '#f5f4fb' }}
         >
-          <div class="avatar mx-auto pt-2">
-            <div class="w-24 mask mask-squircle">
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
               <img src={node} />
             </div>
           </div>
-          <div class="card-body">
-            <h2 class="card-title mx-auto" style={{ color: '#263b68' }}>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
               Node JS
             </h2>
             <p className="text-justify">
@@ -73,16 +75,16 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
-          <div class="avatar mx-auto pt-2">
-            <div class="w-24 mask mask-squircle">
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
               <img src={next} />
             </div>
           </div>
-          <div class="card-body">
-            <h2 class="card-title mx-auto" style={{ color: '#263b68' }}>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
               Next JS
             </h2>
             <p className="text-justify">
@@ -92,16 +94,16 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
-          <div class="avatar mx-auto pt-2">
-            <div class="w-24 mask mask-squircle">
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
               <img src={mongodb} />
             </div>
           </div>
-          <div class="card-body">
-            <h2 class="card-title mx-auto" style={{ color: '#263b68' }}>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
               MongoDB
             </h2>
             <p className="text-justify">
@@ -111,16 +113,16 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
-          <div class="avatar mx-auto pt-2">
-            <div class="w-24 mask mask-squircle">
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
               <img src={native} />
             </div>
           </div>
-          <div class="card-body">
-            <h2 class="card-title mx-auto" style={{ color: '#263b68' }}>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
               React Native
             </h2>
             <p className="text-justify">
@@ -131,22 +133,62 @@ const Skillset = () => {
           </div>
         </div>
         <div
-          class="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
           style={{ backgroundColor: '#f5f4fb' }}
         >
-          <div class="avatar mx-auto pt-2">
-            <div class="w-24 mask mask-squircle">
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
               <img src={firebase} />
             </div>
           </div>
-          <div class="card-body">
-            <h2 class="card-title mx-auto" style={{ color: '#263b68' }}>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
               Firebase
             </h2>
             <p className="text-justify">
               Firebase is a platform developed by Google for creating mobile and
               web applications. It was originally an independent company founded
               in 2011
+            </p>
+          </div>
+        </div>
+        <div
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          style={{ backgroundColor: '#f5f4fb' }}
+        >
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
+              <img src={redux} />
+            </div>
+          </div>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
+              Redux Toolkit
+            </h2>
+            <p className="text-justify">
+              Redux, for state management.Redux Thunk is available with RTK as a
+              default option for async tasks and is highly recommended for
+              simple data fetching tasks
+            </p>
+          </div>
+        </div>
+        <div
+          className="card md:w-80 w-96 lg:w-80 bg-base-100 shadow-xl"
+          style={{ backgroundColor: '#f5f4fb' }}
+        >
+          <div className="avatar mx-auto pt-2">
+            <div className="w-24 mask mask-squircle">
+              <img src={graphql} />
+            </div>
+          </div>
+          <div className="card-body">
+            <h2 className="card-title mx-auto" style={{ color: '#263b68' }}>
+              GraphQL
+            </h2>
+            <p className="text-justify">
+              GraphQL is a query language for APIs and a runtime for fulfilling
+              those queries with your existing data. GraphQL provides a complete
+              and understandable description of the data in your API
             </p>
           </div>
         </div>
