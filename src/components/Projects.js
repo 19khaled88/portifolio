@@ -53,8 +53,8 @@ const Projects = () => {
                   icon="web"
                   iconColor="rgba(255,255,255,1)"
                   backgroundColor="rgba(26,166,233,1)"
-                  url="https://gilded-pony-dcfe3e.netlify.app/"
-                  // url="https://bicycletoolsmanufacturer.web.app/"
+                  // url="https://gilded-pony-dcfe3e.netlify.app/"
+                  url="https://bicycletoolsmanufacturer.web.app/"
                   size="32"
                 />
                 <SocialMediaIconsReact
